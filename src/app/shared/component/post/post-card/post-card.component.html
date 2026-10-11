@@ -1,0 +1,14 @@
+
+
+<div class="card h-100">
+    <div class="card-header">
+        {{getData.title}}
+    </div>
+    <div class="card-body">
+        <p>{{getData.content}}</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <button mat-mini-fab color="primary" (click)="onEdit(getData)"><mat-icon>edit</mat-icon></button>
+        <button mat-mini-fab color="warn" (click)="onRemove(getData.id)" ><mat-icon>delete</mat-icon></button>
+    </div>
+</div>
